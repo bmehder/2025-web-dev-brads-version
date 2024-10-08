@@ -1,0 +1,150 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+	--lg: 70rem;
+
+	--gray: hsl(232, 10%, 56%);
+	--blue-600: hsl(234, 25%, 52%);
+	--blue-900: hsl(233, 54%, 16%);
+	--pink-600: hsl(341, 92%, 62%);
+	--gradient-light: linear-gradient(white, #f0f1ff 40%);
+	--gradient-blue: linear-gradient(
+		135deg,
+		hsla(233, 54%, 16%, 0.95),
+		hsla(234, 25%, 52%, 0.9)
+	);
+	--gradient-pink: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+	--gradient-purple: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+}
+
+/* * {
+	outline: 1px solid blue;
+} */
+
+/* Color utility classes */
+.white {
+	color: white;
+}
+
+.blue-600 {
+	color: var(--blue-600);
+}
+
+.blue-900 {
+	color: var(--blue-900);
+}
+
+.pink-600 {
+	color: var(--pink-600);
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.bg-gray {
+	background-color: var(--gray);
+}
+
+.bg-blue-600 {
+	background-color: var(--blue-600);
+}
+
+.bg-blue-900 {
+	background-color: var(--blue-900);
+}
+
+.bg-pink-600 {
+	background-color: var(--pink-600);
+}
+
+.bg-gradient-light {
+	background-image: var(--gradient-light);
+}
+
+.bg-gradient-blue {
+	background-image: var(--gradient-blue);
+}
+
+.bg-gradient-pink {
+	background-image: var(--gradient-pink);
+}
+
+.bg-gradient-purple {
+	background-image: var(--gradient-purple);
+}
+
+/* Typography */
+body {
+	font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 800;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+a {
+	color: var(--pink-600);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	color: var(--gray);
+}
+
+/* Buttons */
+button,
+.button {
+	display: inline-block;
+	padding-block: 0.75rem;
+	padding-inline: 1.75rem;
+	text-align: center;
+	font-size: 1.125rem;
+	font-weight: bold;
+	border-radius: 1.5rem;
+}
+
+button:hover,
+.button:hover {
+	outline: 4px solid white;
+	text-decoration: none;
+}
+
+/* Forms */
+.input-group {
+	display: grid;
+	gap: var(--size-0-2-5);
+}
+
+input,
+textarea {
+	padding: var(--size);
+}
+
+label {
+	font-weight: 600;
+}
+
+form .required {
+	color: red;
+}
+
+.content-grid {
+	align-content: start;
+}
+
+.pullout-right {
+	grid-column: content-start / full-width-end;
+}
