@@ -8,7 +8,12 @@
 <section class="py-4 flow">
 	<h2>Lorem ipsum dolor sit.</h2>
 
-	<img class="shape" src="/man.png" alt="man" />
+	<img
+		class="image-shape-right"
+		style="shape-outside: url('/man.png');"
+		src="/man.png"
+		alt="man"
+	/>
 
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim rem quae nam ipsa
@@ -58,7 +63,7 @@
 </section>
 
 <section class="py-4">
-	<p>
+	<p class="columns gap-2">
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt facere hic,
 		perferendis repudiandae aliquam eligendi magni beatae iusto eum blanditiis rem
 		quis iste obcaecati et illum! Dolor, hic omnis mollitia alias voluptatum expedita
@@ -124,15 +129,5 @@
 <style>
 	p {
 		max-width: unset;
-	}
-
-	.shape {
-		float: right;
-		width: clamp(16rem, 40vw, 32rem);
-		background-position: center;
-		background-size: cover;
-		aspect-ratio: 1;
-		shape-margin: 2rem;
-		shape-outside: url('/man.png');
 	}
 </style>

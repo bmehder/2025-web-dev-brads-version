@@ -88,7 +88,7 @@ h3 {
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: var(--size-2-5);
 }
 
 a {
@@ -113,12 +113,12 @@ button,
 	text-align: center;
 	font-size: 1.125rem;
 	font-weight: bold;
-	border-radius: 1.5rem;
+	border-radius: var(--size-1-5);
 }
 
 button:hover,
 .button:hover {
-	outline: 4px solid white;
+	outline: var(--size-0-2-5) solid white;
 	text-decoration: none;
 }
 
@@ -131,6 +131,8 @@ button:hover,
 input,
 textarea {
 	padding: var(--size);
+	border: 1px solid var(--blue-900);
+	border-radius: 2px;
 }
 
 label {
@@ -138,13 +140,5 @@ label {
 }
 
 form .required {
-	color: red;
-}
-
-.content-grid {
-	align-content: start;
-}
-
-.pullout-right {
-	grid-column: content-start / full-width-end;
+	color: var(--pink-600);
 }

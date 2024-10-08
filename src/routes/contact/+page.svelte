@@ -6,6 +6,6 @@
 <Title>Contact Us</Title>
 
 <section class="py-4 flow">
-	<h2>Send us a message.</h2>
+	<h2 class="blue-900">Send us a message.</h2>
 	<ContactForm />
 </section>

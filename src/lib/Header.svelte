@@ -6,11 +6,11 @@
 
 <header class="content-grid py-2">
 	<div class="inner">
-		<div class="logo-container">
+		<div class="non-nav-wrapper">
 			<a href="/" on:click={uncheckInput}>
 				<img src="/logo-dark.svg" width="112" height="29" alt="dark logo" />
 			</a>
-			<div class="hamburger-container">
+			<div class="hamburger">
 				<input type="checkbox" id="dropdown" bind:checked={isChecked} />
 				<label for="dropdown" class="dropdown">
 					<span class="hamburger">
@@ -28,7 +28,7 @@
 				</li>
 				<li>
 					<a on:click={uncheckInput} href="/about">About</a>
-					<ul class="flow-1">
+					<ul class="sublist flow-1">
 						<li><a href="/">One</a></li>
 						<li><a href="/">Two</a></li>
 						<li><a href="/">Three Three Three</a></li>
@@ -108,14 +108,14 @@
 		gap: 1.5rem;
 	}
 
-	.logo-container {
+	.non-nav-wrapper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		gap: 1.5rem;
 	}
 
-	.nav-list ul {
+	.nav-list .sublist {
 		padding: 1rem;
 	}
 
@@ -145,20 +145,20 @@
 			align-items: center;
 		}
 
-		.hamburger-container,
-		.nav-list ul {
+		.hamburger,
+		.nav-list .sublist {
 			display: none;
 		}
 
-		.nav-list li {
+		.nav-list > li {
 			position: relative;
 		}
 
-		.nav-list li:hover ul {
+		.nav-list > li:hover .sublist {
 			display: block;
 		}
 
-		.nav-list ul {
+		.nav-list .sublist {
 			position: absolute;
 			left: -1rem;
 			width: max-content;
